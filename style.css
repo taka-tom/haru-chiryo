@@ -457,4 +457,56 @@ footer small {
     font-size: 26px;
   }
 
+/* =========================
+   スマホ固定予約ボタン
+========================= */
+
+.fixed-reservation {
+  position: fixed;
+
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 60px;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  z-index: 200;
+}
+
+.fixed-reservation a {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  font-size: 14px;
+
+  font-weight: 500;
+}
+
+.fixed-reservation a:first-child {
+  background: #333;
+}
+
+.fixed-reservation a:last-child {
+  background: #7b8f7a;
+}
+
+
+/* PCでは表示しない */
+
+@media (min-width: 768px) {
+
+  .fixed-reservation {
+    display: none;
+  }
+
+}
+
 }
