@@ -579,4 +579,84 @@ footer small {
   letter-spacing: 1px;
 }
 
+/* =========================
+   ACCESS / 診療時間
+========================= */
+
+.access {
+  text-align: left;
+}
+
+.access > .section-label,
+.access > h2 {
+  text-align: center;
+}
+
+.access-content {
+  max-width: 900px;
+
+  margin: 50px auto 0;
+
+  display: grid;
+
+  gap: 50px;
+}
+
+.access-info h3,
+.schedule h3 {
+  font-size: 22px;
+
+  margin-bottom: 20px;
+}
+
+.access-info p {
+  margin-bottom: 15px;
+
+  color: #666;
+}
+
+
+/* 診療時間 */
+
+.schedule table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  font-size: 13px;
+
+  text-align: center;
+}
+
+.schedule th,
+.schedule td {
+  padding: 10px 5px;
+
+  border-bottom: 1px solid #ddd;
+}
+
+.schedule th:first-child {
+  text-align: left;
+}
+
+.schedule-note {
+  margin-top: 15px;
+
+  font-size: 13px;
+
+  color: #777;
+}
+
+
+/* PC */
+
+@media (min-width: 768px) {
+
+  .access-content {
+    grid-template-columns:
+      1fr 1.2fr;
+  }
+
+}
+
 }
