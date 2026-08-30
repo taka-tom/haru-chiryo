@@ -520,6 +520,7 @@ footer small {
   right: 0;
 
   width: 280px;
+  max-width: 85vw;
 
   padding: 30px;
 
@@ -534,15 +535,30 @@ footer small {
 
   gap: 20px;
 
-  transform: translateX(100%);
+  transform: translateX(110%);
 
-  transition: 0.3s;
+  opacity: 0;
 
-  z-index: 99;
+  visibility: hidden;
+
+  pointer-events: none;
+
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+
+  z-index: 999;
 }
 
 #nav-menu.active {
   transform: translateX(0);
+
+  opacity: 1;
+
+  visibility: visible;
+
+  pointer-events: auto;
 }
 
 #nav-menu a {
