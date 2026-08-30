@@ -509,4 +509,50 @@ footer small {
 
 }
 
+/* =========================
+   ナビゲーション
+========================= */
+
+#nav-menu {
+  position: fixed;
+
+  top: 70px;
+  right: 0;
+
+  width: 280px;
+
+  padding: 30px;
+
+  background: white;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.12);
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+
+  transform: translateX(100%);
+
+  transition: 0.3s;
+
+  z-index: 99;
+}
+
+#nav-menu.active {
+  transform: translateX(0);
+}
+
+#nav-menu a {
+  padding: 10px 0;
+
+  border-bottom: 1px solid #eee;
+
+  font-size: 14px;
+
+  letter-spacing: 1px;
+}
+
 }
