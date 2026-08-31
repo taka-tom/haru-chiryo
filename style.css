@@ -752,3 +752,25 @@ footer small {
 
   font-size: 14px;
 }
+
+.menu-button {
+  display: inline-block;
+
+  margin-top: 20px;
+
+  padding: 10px 20px;
+
+  border: 1px solid #333;
+
+  border-radius: 30px;
+
+  font-size: 13px;
+
+  transition: 0.3s;
+}
+
+.menu-button:hover {
+  background: #333;
+
+  color: white;
+}
