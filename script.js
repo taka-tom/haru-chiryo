@@ -5,4 +5,11 @@ function toggleMenu() {
   navMenu.classList.toggle("active");
 
 }
+function selectCourse(course) {
 
+  const courseSelect =
+    document.getElementById("course");
+
+  courseSelect.value = course;
+
+}
