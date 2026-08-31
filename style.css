@@ -464,7 +464,7 @@ footer small {
   section h2 {
     font-size: 26px;
   }
-
+}
 /* =========================
    スマホ固定予約ボタン
 ========================= */
@@ -762,5 +762,4 @@ footer small {
 [data-fs-success]:not(:empty),
 [data-fs-error]:not(:empty) {
   display: block;
-}
 }
