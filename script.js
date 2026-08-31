@@ -31,3 +31,30 @@ const day =
 
 dateInput.min =
   `${year}-${month}-${day}`;
+  
+  dateInput.addEventListener("change", function () {
+
+  const selectedDate =
+    new Date(this.value + "T00:00:00");
+
+  const day =
+    selectedDate.getDay();
+
+  const timeSelect =
+    document.getElementById("time");
+
+  if (day === 0) {
+
+    timeSelect.value = "";
+
+    timeSelect.disabled = true;
+
+    alert("日曜日は休診日のため、予約できません。");
+
+  } else {
+
+    timeSelect.disabled = false;
+
+  }
+
+});
