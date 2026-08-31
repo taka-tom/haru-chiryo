@@ -427,12 +427,13 @@
         <span>必須</span>
       </label>
 
-      <input
-        type="text"
-        id="name"
-        name="name"
-        required>
-
+        <input
+          type="text"
+          id="name"
+          name="name"
+          data-fs-field
+          required>
+        
     </div>
 
 
@@ -445,10 +446,11 @@
         <span>必須</span>
       </label>
 
-      <input
+    <input
         type="tel"
         id="tel"
         name="tel"
+        data-fs-field
         required>
 
     </div>
@@ -464,11 +466,11 @@
       </label>
 
       <input
-        type="email"
-        id="email"
-        name="email"
-        required>
-
+          type="email"
+          id="email"
+          name="email"
+          data-fs-field
+          required>
     </div>
 
 
@@ -480,10 +482,11 @@
         ご希望の施術
       </label>
 
-      <select
+     <select
         id="course"
-        name="course">
-
+        name="course"
+        data-fs-field>
+        
         <option value="">
           選択してください
         </option>
@@ -533,13 +536,14 @@
         お問い合わせ内容
       </label>
 
-      <textarea
+    <textarea
         id="message"
         name="message"
+        data-fs-field
         rows="6"
         placeholder="気になる症状などをご記入ください"></textarea>
-
-    </div>
+        
+            </div>
 
 
     <!-- 送信 -->
