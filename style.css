@@ -752,14 +752,3 @@ footer small {
 
   font-size: 14px;
 }
-/* Formspree 送信メッセージ */
-
-[data-fs-success],
-[data-fs-error] {
-  display: none;
-}
-
-[data-fs-success]:not(:empty),
-[data-fs-error]:not(:empty) {
-  display: block;
-}
