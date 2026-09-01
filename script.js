@@ -120,3 +120,90 @@ dateInput.addEventListener("change", function () {
   timeSelect.disabled = false;
 
 });
+
+const confirmButton =
+  document.getElementById("confirm-button");
+
+const confirmArea =
+  document.getElementById("confirm-area");
+
+const confirmContent =
+  document.getElementById("confirm-content");
+
+const editButton =
+  document.getElementById("edit-button");
+
+
+confirmButton.addEventListener("click", function () {
+
+  const name =
+    document.getElementById("name").value;
+
+  const tel =
+    document.getElementById("tel").value;
+
+  const email =
+    document.getElementById("email").value;
+
+  const course =
+    document.getElementById("course").value;
+
+  const date =
+    document.getElementById("date").value;
+
+  const time =
+    document.getElementById("time").value;
+
+  const message =
+    document.getElementById("message").value;
+
+
+  if (
+    !name ||
+    !tel ||
+    !email ||
+    !course ||
+    !date ||
+    !time
+  ) {
+
+    alert("必須項目を入力してください。");
+
+    return;
+
+  }
+
+
+  confirmContent.innerHTML = `
+
+    <p><strong>お名前</strong><br>${name}</p>
+
+    <p><strong>電話番号</strong><br>${tel}</p>
+
+    <p><strong>メールアドレス</strong><br>${email}</p>
+
+    <p><strong>ご希望の施術</strong><br>${course}</p>
+
+    <p><strong>ご希望日</strong><br>${date}</p>
+
+    <p><strong>ご希望時間</strong><br>${time}</p>
+
+    <p><strong>お問い合わせ内容</strong><br>${message || "なし"}</p>
+
+  `;
+
+
+  confirmArea.style.display = "block";
+
+  confirmArea.scrollIntoView({
+    behavior: "smooth"
+  });
+
+});
+
+
+editButton.addEventListener("click", function () {
+
+  confirmArea.style.display = "none";
+
+});
