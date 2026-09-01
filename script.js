@@ -208,23 +208,3 @@ editButton.addEventListener("click", function () {
 
 });
 
-const successMessage =
-  document.getElementById("reservation-success");
-
-const reservationForm =
-  document.getElementById("reservation-form");
-
-reservationForm.addEventListener("submit", function () {
-
-  setTimeout(function () {
-
-    successMessage.style.display = "block";
-
-    successMessage.scrollIntoView({
-      behavior: "smooth",
-      block: "center"
-    });
-
-  }, 1000);
-
-});
