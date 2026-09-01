@@ -848,3 +848,39 @@ footer small {
 
   cursor: pointer;
 }
+
+/* =========================
+   予約完了メッセージ
+========================= */
+
+.reservation-success {
+  display: none;
+
+  margin-top: 20px;
+
+  padding: 20px;
+
+  background: white;
+
+  color: #333;
+
+  border-radius: 8px;
+
+  text-align: center;
+}
+
+.reservation-success strong {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-size: 17px;
+}
+
+.reservation-success p {
+  margin: 0;
+
+  font-size: 13px;
+
+  color: #666;
+}
